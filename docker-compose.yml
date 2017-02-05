@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+    smb:
+        build: .
+        cap_add:
+            - SYS_ADMIN
+            - DAC_READ_SEARCH
+        logging:
+            driver: json-file
+            options:
+                max-size: "10m"
+                max-file: "5"
