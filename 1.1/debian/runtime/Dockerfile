@@ -1,3 +1,3 @@
-FROM microsoft/dotnet:runtime
+FROM microsoft/dotnet:1.1-runtime
 RUN	apt-get update && \
 	apt-get install -yq cifs-utils
